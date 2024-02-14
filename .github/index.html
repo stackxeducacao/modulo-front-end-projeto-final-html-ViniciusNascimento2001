@@ -1,0 +1,333 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto Final</title>
+        <style>
+            /*Geral*/
+            body{
+                padding: 20px;
+                background-color: #4d4855;
+                background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+                font-family: Arial, Helvetica, sans-serif;
+                color: #f9fcff;
+            }
+            #falando-de-si{
+                float: left;
+                width: 45%;                
+            }
+            #foto{
+                float: right;
+                width: 45%;                
+            }
+            .circle {
+                background-color: #aaa;
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                overflow: hidden;
+                position: relative;
+            }
+            .circle img {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+            #indrotucao-completo {
+                height: 250px;
+                padding-top: 30%;
+                font-size: 1.5em;
+            }            
+            #introducao {
+                font-size: 1.5em;
+            }
+            #apresentcao {
+                text-align: left;
+                margin-top: 10%;
+                font-size: 0.75em;
+            }
+            .titulo {
+                font-size: 4.5em;
+                margin-top: 10%;
+            }
+
+            /*Habilidades*/
+            #habilidades {
+                margin-top: 35%;
+            }
+            #habilidades .conteudo {
+                margin-top: 4.0%;
+            }
+            #habilidades .conteudo-modulo {
+                width: 16%;
+                float: left;
+                text-align: center;                
+            }
+            #habilidades .titulo-conteudo{
+                font-size: 2.75em;
+            }            
+            #habilidades .texto-conteudo {
+                font-size: 0.75em;
+                padding: 2%;
+            }
+            
+            /*Experiencia*/
+            #experiencia {
+                margin-top: 45%;
+            }
+            #experiencia .titulo-conteudo{
+                font-size: 2.5em;
+            }
+            #experiencia .conteudo-modulo {                
+                margin-top: 2.5%;        
+            }
+            #experiencia .texto-conteudo {                
+                font-size: 1.5em;
+            }
+
+            /*Contato*/
+            #contato {
+                margin-top: 2.5%;
+            }
+            #formulario {
+                text-align: center;
+                margin-top: 4%;
+            }
+            form {
+                display: inline-block;                
+            }
+            input[type=submit] {
+                background: #4CAF50;
+            }
+            input[type=number] {
+                text-align: center;
+            }
+            input[type=submit] {
+                font-size: 1.05em;
+            }
+            input{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+            label{
+                font-size: 1.5em;
+            }
+            textarea {
+                width: 100%;
+                height: 150px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            
+            @media only screen and (max-width: 600px) {                
+                
+                /*Geral*/
+                .titulo {
+                    font-size: 3.75em;
+                }
+                #introducao {
+                    font-size: 1em;
+                }
+                #falando-de-si{
+                    float: none;
+                    width: 100%;              
+                }
+                #foto{
+                    float: none;                
+                }
+                #indrotucao-completo {
+                    padding-top: 10%;
+                }
+                
+                /*Habilidades*/
+                #habilidades {
+                    margin-top: -12.5%;
+                }
+                #habilidades .titulo-conteudo{
+                    font-size: 1.75em;
+                }
+                #habilidades .conteudo-modulo {
+                    width: 33.3%;
+                    float: left;
+                    margin-top: 5%;
+                }                
+                
+                /*Experiencia*/
+                #experiencia .texto-conteudo {                
+                    font-size: 1.25em;
+                }
+                #experiencia {
+                    margin-top: 45%;
+                }
+            } 
+            
+            @media only screen and (min-width: 600px) {
+                
+                /*Geral*/                
+                #introducao {
+                    font-size: 1.05em;
+                }
+                #apresentcao {
+                    font-size: 0.85em;
+                }
+                #falando-de-si{
+                    float: none;
+                    width: 100%;              
+                }
+                #foto{
+                    float: none;                
+                }
+                #indrotucao-completo {
+                    padding-top: 10%;
+                }
+                
+                /*Habilidade*/
+                #habilidades {
+                    margin-top: -12.5%;
+                }
+                #habilidades .conteudo-modulo {
+                width: 33.3%;
+                float: left;
+                margin-top: 5%;
+                }
+                #habilidades .titulo-conteudo{
+                font-size: 2.75em;
+                }
+
+                /*Experiencia*/
+                #experiencia {
+                    margin-top: 45%;
+                }
+            } 
+            
+            @media only screen and (min-width: 768px) {
+                
+                /*Geral*/
+                #foto{
+                    padding-right: 10%;
+                    width: 100%;
+                }
+
+                /*Habilidade*/
+                #habilidades .conteudo-modulo {
+                width: 33.3%;
+                float: left;
+                margin-top: 5%;
+                }
+                #habilidades .titulo-conteudo{
+                font-size: 2.75em;
+                }
+                
+                /*Experiencia*/
+                #experiencia {
+                    margin-top: 35%;
+                }
+            }
+            
+            @media only screen and (min-width: 992px) {
+
+                /*Geral*/
+                .titulo {
+                    font-size: 3.5em;
+                }
+                #falando-de-si{
+                    float: left;
+                    width: 45%;                
+                }
+                #foto{
+                    float: right;
+                    width: 45%;                
+                }
+
+                /*Habilidade*/
+                #habilidades {
+                    margin-top: 35%;
+                }
+                #habilidades .conteudo-modulo {
+                width: 33.3%;
+                float: left;
+                margin-top: 5%;
+                }
+                #habilidades .titulo-conteudo{
+                font-size: 2.75em;
+                }
+                
+                /*Experiencia*/
+                #experiencia {
+                    margin-top: 30%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="foto">
+            <div class="circle">
+                <img src="perfil.jpg">
+            </div>
+        </div>
+        <div id="falando-de-si">
+            <div id="indrotucao-completo">                    
+                <span id="introducao">Olá meu nome é Vinícius Soares Nascimento</span>
+                <div id="apresentcao">Sou um desenvolvedor FullStack formado em segurança da informação com experiência no mercado de trabalho.</div>
+            </div>          
+        </div>
+        <div id="habilidades">
+            <span class="titulo">Habilidades</span>
+            <div class="conteudo">
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">HTML</span><br>
+                    <span class="texto-conteudo">3 anos de experiência</span>
+                </div>
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">CSS</span><br>
+                    <span class="texto-conteudo">3 anos de experiência</span>
+                </div>
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">BootStrap</span><br>
+                    <span class="texto-conteudo">1 anos de experiência</span>
+                </div>
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">Javascript</span><br>
+                    <span class="texto-conteudo">3 anos de experiência</span>
+                </div>
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">C#</span><br>
+                    <span class="texto-conteudo">3 anos de experiência</span>
+                </div>
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">PHP</span><br>
+                    <span class="texto-conteudo">Apenas estudo</span>
+                </div>
+            </div>
+        </div>
+        <div id="experiencia">
+            <span class="titulo">Experiencia</span>
+            <div class="conteudo">
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">Softin</span><br><br>
+                    <span class="texto-conteudo">Começou como estágio durante a minha graduação de Segurança da Informação com desenvolvimento web C# .Netem arquitetura MVC onde realizava manutenção de software e criação de api para microsserviços. Depois da finalização da graduação fui efetivado e tive experiência de metologia ágil e uso do framework React.</span>
+                </div>
+                <div class="conteudo-modulo">
+                    <span class="titulo-conteudo">BRCondos</span><br><br>
+                    <span class="texto-conteudo">Desenvolvimento web C# .Net em arquitetura MVC, atuei mais em otimização e reestilização de páginas web adaptando a interface para uma visão mais moderna, otimizando o código javascript do frontend para o uso de vuejs e otimizando o tempo de consulta de dados no backend.</span>
+                </div>
+            </div>
+        </div>
+        <div id="contato">
+            <span class="titulo">Contato</span>
+            <div id="formulario">
+                <form>
+                    <label>
+                        Nome <input type="text" required name="nome">
+                        Email <input type="email" required name="email">
+                        Comentário <textarea name="comentario"></textarea>
+                        <input type="submit">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
